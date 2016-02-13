@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'timezone' => ' America/Lima',
+    'timezone' => 'America/Lima',
 
     /*
     |--------------------------------------------------------------------------
@@ -155,6 +155,7 @@ return [
         Hyt\Providers\AuthServiceProvider::class,
         Hyt\Providers\EventServiceProvider::class,
         Hyt\Providers\RouteServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
 
     ],
 
@@ -201,6 +202,8 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+        'Form'      => Collective\Html\FormFacade::class,
+        'Html'      => Collective\Html\HtmlFacade::class,
 
     ],
 

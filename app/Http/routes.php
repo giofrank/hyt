@@ -29,3 +29,13 @@ Route::get('/', function () {
 Route::group(['middleware' => ['web']], function () {
     //
 });
+
+Route::get('layout', function () {
+    return view('layout');
+});
+
+Route::get('/', function () {
+    return view('login');
+});
+
+Route::resource('almacen','AlmacenController');
